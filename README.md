@@ -40,6 +40,22 @@ pip3 install -r requirements.txt
 uvicorn --port 80 app:app
 ```
 
+## Your data
+
+Your data must be put in the `data/` directory.
+
+This directory contains a `.gitignore` to ensure that your are not uploading by mistake your model online. Remember, with datacrunch, you are the owner of your model!
+
+By default, you must names your file with the following:
+
+| Target | File                |
+|--------|---------------------|
+| R      | data/model_target_r |
+| G      | data/model_target_g |
+| B      | data/model_target_b |
+
+This can be changed in the [inference.py](inference.py) file.
+
 ## Accessing it
 
 Accessing your code is easy: [localhost:80](http://localhost:80)
