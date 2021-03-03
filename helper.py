@@ -1,6 +1,6 @@
 import os
 
-import joblib
+import pickle
 
 
 def load_model(path):
@@ -25,4 +25,5 @@ def load_model(path):
         print(f"argh... the file for the model {path} does not exists or is not readable, are you sure you put it in?")
         exit(1)
     
-    return joblib.load(path)
+    with open(path, "rb") as fd:
+        return pickle.load(fd)
