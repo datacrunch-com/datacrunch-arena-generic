@@ -4,7 +4,7 @@ This is a generic API that anyone can use to quickly deploy its model to the dat
 
 ## Docker
 
-This project include a Dockerfile ready to be build.
+This project includes a Dockerfile ready to be build.
 
 (require that you have [docker](https://www.docker.com/) installed on your computer (or server))
 
@@ -22,7 +22,7 @@ docker run --rm -it -p 80:80 datacrunch-arena
 
 ## By Hand
 
-If you do not want to use a docker environement, you can achieve the same result by installing it by hand.
+If you do not want to use a docker environment, you can achieve the same result by installing it by hand.
 
 (require that you have [python (> v3.7)](https://www.python.org/) installed on your computer (or server))
 
